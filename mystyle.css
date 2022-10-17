@@ -31,7 +31,7 @@ h3 {
 
 
 
-p {
+p, div {
     display: block;
 }
 
@@ -112,4 +112,43 @@ a:active {
     padding: 20px;
     font-size: 30px;
     text-align: center;
+}
+
+#OW1 {
+    color: goldenrod;
+}
+
+* {
+    text-align: left;
+    color: black;
+  }
+
+h2[target] {
+    background-color: #f1f1f1;
+}
+
+div li {
+    color: slategray;
+}
+
+ol > li {
+    font-size: 0.5cm;
+}
+
+hr + h2 {
+    color: aqua;
+    background-color: white;
+    border: 5px solid cyan;
+}
+
+div ~ div {
+    background-color: yellow;
+}
+
+div.box1 {
+    background-color: black;
+}
+
+div.box2 {
+    background-color: black;
 }
