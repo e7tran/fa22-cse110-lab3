@@ -1,19 +1,115 @@
 body {
-    background-color: powderblue;
+    background-color: lightblue;
+    font-family: "Oswald", sans-serif;
 } /*Changes background color to powderblue*/
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: powderblue; 
+    }
+}/*Changes background color to powderblue if screen width >= 480px*/
 
 h1 {
     font-size: 1cm;
+    text-align: left;
+    height: 50px;
+    position: static;
 }
 
 h2 {
     font-size: 7.5mm;
+    text-align: left;
+    width: 500px;
 }
 
 h3 {
     font-size: 0.25in;
+    text-align: left;
+    display: inline;
+    max-width: 500px;
 }
 
-b {
-    
+
+
+p {
+    display: block;
+}
+
+.box1 { 
+    margin: 10px;
+    padding: 10px;
+    background-color: hsl(0,0%,100%);
+    border: 5px solid maroon;
+} /*Border for DPS list*/
+
+.box2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: dotted;
+    border-color: darkgreen;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: white;
+} /* Border for tank list*/
+
+.box3 {
+    margins: auto;
+    background-color: white;
+    border: 5px solid cyan
+} /*Border for support list*/
+
+
+a:link {
+    color: blue;
+}/* unvisited link */
+
+  
+a:visited {
+    color: orangered;
+}/* visited link */
+
+  
+a:hover {
+    color: orange;
+}/* mouse over link */
+
+
+a:active {
+    color: green;
+}/* selected link */
+
+.flex-container {
+    display: flex;
+    background-color: orange;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: orange;
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
